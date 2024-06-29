@@ -40,6 +40,7 @@ const loadEvents = (dir, collection) => {
 
 // add more folders here in the same way as below to put the command in the separate folder in your folder
 loadCommands('./commands', client.commands);
+loadCommands('./commands/defaultbotcommands', client.commands);
 loadCommands('./commands/moderate', client.commands);
 loadCommands('./commands/overig', client.commands);
 
