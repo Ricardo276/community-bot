@@ -3,6 +3,10 @@ const { token } = require('./config.json');
 const fs = require('fs');
 const path = require('path');
 
+module.exports = {
+    name: 'counting', // This signifies the name of the event/module
+};
+
 const client = new Client({ intents: [GatewayIntentBits.Guilds, GatewayIntentBits.GuildMessages, GatewayIntentBits.MessageContent] });
 
 const CHANNEL_ID = '1255178589142253700'; // Replace this with your channel ID
